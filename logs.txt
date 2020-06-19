@@ -23,35 +23,35 @@ Body:
     }
 }
 HTTP/1.1 201 
-X-AREQUESTID: 771x115x1
-X-ASESSIONID: 1udk8u6
+X-AREQUESTID: 636x336x1
+X-ASESSIONID: 3js3l7
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 X-ASEN: SEN-L15502454
 X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_5b74bed0719c9f1cd2306c44c093d15518352867_lin; Path=/
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_75351a129816a3987c8a2053a691a2a542c92228_lin; Path=/
 X-AUSERNAME: D
 Cache-Control: no-cache, no-store, no-transform
 Content-Encoding: gzip
 Vary: User-Agent
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 07:21:15 GMT
+Date: Fri, 19 Jun 2020 05:07:11 GMT
 
 {
-    "id": "10612",
-    "key": "RES-341",
-    "self": "http://localhost:8080/rest/api/2/issue/10612"
+    "id": "10615",
+    "key": "RES-344",
+    "self": "http://localhost:8080/rest/api/2/issue/10615"
 }
 Request method:	POST
-Request URI:	http://localhost:8080/rest/api/2/issue/10612/comment
+Request URI:	http://localhost:8080/rest/api/2/issue/10615/comment
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	issueID=10612
+Path params:	issueID=10615
 Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
@@ -65,27 +65,27 @@ Body:
     }
 }
 HTTP/1.1 201 
-X-AREQUESTID: 771x116x1
-X-ASESSIONID: 1udk8u6
+X-AREQUESTID: 637x337x1
+X-ASESSIONID: 3js3l7
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 X-ASEN: SEN-L15502454
 X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_f15ebca2bb27f10862c55459193766ea42139a76_lin; Path=/
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_b67e2565feda21a2b11de48f4c42ba948fa0b927_lin; Path=/
 X-AUSERNAME: D
-Location: http://localhost:8080/rest/api/2/issue/10612/comment/10611
+Location: http://localhost:8080/rest/api/2/issue/10615/comment/10614
 Cache-Control: no-cache, no-store, no-transform
 Content-Encoding: gzip
 Vary: User-Agent
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 07:21:17 GMT
+Date: Fri, 19 Jun 2020 05:07:13 GMT
 
 {
-    "self": "http://localhost:8080/rest/api/2/issue/10612/comment/10611",
-    "id": "10611",
+    "self": "http://localhost:8080/rest/api/2/issue/10615/comment/10614",
+    "id": "10614",
     "author": {
         "self": "http://localhost:8080/rest/api/2/user?username=D",
         "name": "D",
@@ -117,20 +117,20 @@ Date: Thu, 18 Jun 2020 07:21:17 GMT
         "active": true,
         "timeZone": "Asia/Calcutta"
     },
-    "created": "2020-06-18T12:51:16.220+0530",
-    "updated": "2020-06-18T12:51:16.220+0530",
+    "created": "2020-06-19T10:37:12.874+0530",
+    "updated": "2020-06-19T10:37:12.874+0530",
     "visibility": {
         "type": "role",
         "value": "Administrators"
     }
 }
 Request method:	POST
-Request URI:	http://localhost:8080/rest/api/2/issue/10612/attachments
+Request URI:	http://localhost:8080/rest/api/2/issue/10615/attachments
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	issueID=10612
+Path params:	issueID=10615
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=multipart/form-data
@@ -147,27 +147,27 @@ Multiparts:		------------
 				.\abc.txt
 Body:			<none>
 HTTP/1.1 200 
-X-AREQUESTID: 771x117x1
-X-ASESSIONID: 1udk8u6
+X-AREQUESTID: 637x338x1
+X-ASESSIONID: 3js3l7
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 X-ASEN: SEN-L15502454
 X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_ca4b7e30c5c2d7ec213f523c5b338bd99f34b293_lin; Path=/
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_5da37c02f7800d547dd77300ccc79cc8656ac2ae_lin; Path=/
 X-AUSERNAME: D
 Cache-Control: no-cache, no-store, no-transform
 Content-Encoding: gzip
 Vary: User-Agent
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 07:21:22 GMT
+Date: Fri, 19 Jun 2020 05:07:21 GMT
 
 [
     {
-        "self": "http://localhost:8080/rest/api/2/attachment/10922",
-        "id": "10922",
+        "self": "http://localhost:8080/rest/api/2/attachment/10928",
+        "id": "10928",
         "filename": "pic.jpg",
         "author": {
             "self": "http://localhost:8080/rest/api/2/user?username=D",
@@ -184,15 +184,15 @@ Date: Thu, 18 Jun 2020 07:21:22 GMT
             "active": true,
             "timeZone": "Asia/Calcutta"
         },
-        "created": "2020-06-18T12:51:19.944+0530",
+        "created": "2020-06-19T10:37:17.164+0530",
         "size": 745916,
         "mimeType": "image/jpeg",
-        "content": "http://localhost:8080/secure/attachment/10922/pic.jpg",
-        "thumbnail": "http://localhost:8080/secure/thumbnail/10922/_thumb_10922.png"
+        "content": "http://localhost:8080/secure/attachment/10928/pic.jpg",
+        "thumbnail": "http://localhost:8080/secure/thumbnail/10928/_thumb_10928.png"
     },
     {
-        "self": "http://localhost:8080/rest/api/2/attachment/10923",
-        "id": "10923",
+        "self": "http://localhost:8080/rest/api/2/attachment/10929",
+        "id": "10929",
         "filename": "abc.txt",
         "author": {
             "self": "http://localhost:8080/rest/api/2/user?username=D",
@@ -209,55 +209,55 @@ Date: Thu, 18 Jun 2020 07:21:22 GMT
             "active": true,
             "timeZone": "Asia/Calcutta"
         },
-        "created": "2020-06-18T12:51:20.330+0530",
+        "created": "2020-06-19T10:37:17.789+0530",
         "size": 32,
         "mimeType": "text/plain",
-        "content": "http://localhost:8080/secure/attachment/10923/abc.txt"
+        "content": "http://localhost:8080/secure/attachment/10929/abc.txt"
     }
 ]
 Request method:	GET
-Request URI:	http://localhost:8080/rest/api/2/issue/10612?fields=comment&fields=summary&fields=description&fields=attachment
+Request URI:	http://localhost:8080/rest/api/2/issue/10615?fields=comment&fields=summary&fields=description&fields=attachment
 Proxy:			<none>
 Request params:	<none>
 Query params:	fields=[comment, summary, description, attachment]
 Form params:	<none>
-Path params:	issueID=10612
+Path params:	issueID=10615
 Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-X-AREQUESTID: 771x118x1
-X-ASESSIONID: 1udk8u6
+X-AREQUESTID: 637x339x1
+X-ASESSIONID: 3js3l7
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 X-ASEN: SEN-L15502454
 X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_a2a1fb44ff4f28e3f86ea2d3ef0ead7c4795c862_lin; Path=/
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_ebdd20cfdf1973e726f7cee26e3e086c10a8123f_lin; Path=/
 X-AUSERNAME: D
 Cache-Control: no-cache, no-store, no-transform
 Content-Encoding: gzip
 Vary: User-Agent
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 07:21:22 GMT
+Date: Fri, 19 Jun 2020 05:07:21 GMT
 
 {
     "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-    "id": "10612",
-    "self": "http://localhost:8080/rest/api/2/issue/10612",
-    "key": "RES-341",
+    "id": "10615",
+    "self": "http://localhost:8080/rest/api/2/issue/10615",
+    "key": "RES-344",
     "fields": {
         "summary": "Automated Bug",
         "description": "Bug reporting using the REST API",
         "comment": {
             "comments": [
                 {
-                    "self": "http://localhost:8080/rest/api/2/issue/10612/comment/10611",
-                    "id": "10611",
+                    "self": "http://localhost:8080/rest/api/2/issue/10615/comment/10614",
+                    "id": "10614",
                     "author": {
                         "self": "http://localhost:8080/rest/api/2/user?username=D",
                         "name": "D",
@@ -289,8 +289,8 @@ Date: Thu, 18 Jun 2020 07:21:22 GMT
                         "active": true,
                         "timeZone": "Asia/Calcutta"
                     },
-                    "created": "2020-06-18T12:51:16.220+0530",
-                    "updated": "2020-06-18T12:51:16.220+0530",
+                    "created": "2020-06-19T10:37:12.874+0530",
+                    "updated": "2020-06-19T10:37:12.874+0530",
                     "visibility": {
                         "type": "role",
                         "value": "Administrators"
@@ -303,8 +303,8 @@ Date: Thu, 18 Jun 2020 07:21:22 GMT
         },
         "attachment": [
             {
-                "self": "http://localhost:8080/rest/api/2/attachment/10923",
-                "id": "10923",
+                "self": "http://localhost:8080/rest/api/2/attachment/10929",
+                "id": "10929",
                 "filename": "abc.txt",
                 "author": {
                     "self": "http://localhost:8080/rest/api/2/user?username=D",
@@ -321,14 +321,14 @@ Date: Thu, 18 Jun 2020 07:21:22 GMT
                     "active": true,
                     "timeZone": "Asia/Calcutta"
                 },
-                "created": "2020-06-18T12:51:20.330+0530",
+                "created": "2020-06-19T10:37:17.789+0530",
                 "size": 32,
                 "mimeType": "text/plain",
-                "content": "http://localhost:8080/secure/attachment/10923/abc.txt"
+                "content": "http://localhost:8080/secure/attachment/10929/abc.txt"
             },
             {
-                "self": "http://localhost:8080/rest/api/2/attachment/10922",
-                "id": "10922",
+                "self": "http://localhost:8080/rest/api/2/attachment/10928",
+                "id": "10928",
                 "filename": "pic.jpg",
                 "author": {
                     "self": "http://localhost:8080/rest/api/2/user?username=D",
@@ -345,38 +345,38 @@ Date: Thu, 18 Jun 2020 07:21:22 GMT
                     "active": true,
                     "timeZone": "Asia/Calcutta"
                 },
-                "created": "2020-06-18T12:51:19.944+0530",
+                "created": "2020-06-19T10:37:17.164+0530",
                 "size": 745916,
                 "mimeType": "image/jpeg",
-                "content": "http://localhost:8080/secure/attachment/10922/pic.jpg",
-                "thumbnail": "http://localhost:8080/secure/thumbnail/10922/_thumb_10922.png"
+                "content": "http://localhost:8080/secure/attachment/10928/pic.jpg",
+                "thumbnail": "http://localhost:8080/secure/thumbnail/10928/_thumb_10928.png"
             }
         ]
     }
 }
 Request method:	DELETE
-Request URI:	http://localhost:8080/rest/api/2/issue/10612
+Request URI:	http://localhost:8080/rest/api/2/issue/10615
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	issueID=10612
+Path params:	issueID=10615
 Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
-X-AREQUESTID: 771x119x1
-X-ASESSIONID: 1udk8u6
+X-AREQUESTID: 637x340x1
+X-ASESSIONID: 3js3l7
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 X-ASEN: SEN-L15502454
 X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_418cf976b199347fc62a6ca96ebe8f8c14c3907a_lin; Path=/
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_25dca9efa999f2e8ef2c3edb529e354c2c978c7a_lin; Path=/
 X-AUSERNAME: D
 Cache-Control: no-cache, no-store, no-transform
 Content-Type: application/json;charset=UTF-8
-Date: Thu, 18 Jun 2020 07:21:24 GMT
+Date: Fri, 19 Jun 2020 05:07:23 GMT
