@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Jira Automation</td>
+        <td>1</td>
+      <td>18 Jun 2020, 12:51</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.create_body_for_createIssueAPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="12000000">0.012</td>
+              <td class="duration" data-value="12000000">0.012</td>
+              <td class="duration" data-value="12000000">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.create_comment_body(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="duration" data-value="2000000">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.create_request_specification_for_deleteIssueAPI(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="26600000">0.026</td>
+              <td class="duration" data-value="26600000">0.073</td>
+              <td class="duration" data-value="133000000">0.133</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.create_response_specification_with_status_code(java.lang.Integer)</td>
+              <td>5</td>
+              <td class="duration" data-value="6000000">0.006</td>
+              <td class="duration" data-value="6000000">0.014</td>
+              <td class="duration" data-value="30000000">0.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.extract_attached_files_name()</td>
+              <td>1</td>
+              <td class="duration" data-value="126000000">0.126</td>
+              <td class="duration" data-value="126000000">0.126</td>
+              <td class="duration" data-value="126000000">0.126</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.extract_commentID()</td>
+              <td>1</td>
+              <td class="duration" data-value="1561000000">1.561</td>
+              <td class="duration" data-value="1561000000">1.561</td>
+              <td class="duration" data-value="1561000000">1.561</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.extract_issueID()</td>
+              <td>1</td>
+              <td class="duration" data-value="20000000">0.020</td>
+              <td class="duration" data-value="20000000">0.020</td>
+              <td class="duration" data-value="20000000">0.020</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.i_have_getIssue_API_reponse()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.i_have_issueID()</td>
+              <td>4</td>
+              <td class="duration" data-value="8750000">0.008</td>
+              <td class="duration" data-value="8750000">0.020</td>
+              <td class="duration" data-value="35000000">0.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.send_request_to_addAttachmentAPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="3551000000">3.551</td>
+              <td class="duration" data-value="3551000000">3.551</td>
+              <td class="duration" data-value="3551000000">3.551</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.send_request_to_addCommentAPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1965000000">1.965</td>
+              <td class="duration" data-value="1965000000">1.965</td>
+              <td class="duration" data-value="1965000000">1.965</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.send_request_to_createIssueAPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1315000000">1.315</td>
+              <td class="duration" data-value="1315000000">1.315</td>
+              <td class="duration" data-value="1315000000">1.315</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.send_request_to_deleteIssueAPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="1050000000">1.050</td>
+              <td class="duration" data-value="1050000000">1.050</td>
+              <td class="duration" data-value="1050000000">1.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.send_request_to_getIssueAPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="525000000">0.525</td>
+              <td class="duration" data-value="525000000">0.525</td>
+              <td class="duration" data-value="525000000">0.525</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.verify_attachments()</td>
+              <td>1</td>
+              <td class="duration" data-value="11000000">0.011</td>
+              <td class="duration" data-value="11000000">0.011</td>
+              <td class="duration" data-value="11000000">0.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.verify_comment()</td>
+              <td>1</td>
+              <td class="duration" data-value="22000000">0.022</td>
+              <td class="duration" data-value="22000000">0.022</td>
+              <td class="duration" data-value="22000000">0.022</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.verify_issueID()</td>
+              <td>1</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="duration" data-value="57000000">0.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.verify_issue_description()</td>
+              <td>1</td>
+              <td class="duration" data-value="19000000">0.019</td>
+              <td class="duration" data-value="19000000">0.019</td>
+              <td class="duration" data-value="19000000">0.019</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.verify_issue_is_deleted()</td>
+              <td>1</td>
+              <td class="duration" data-value="583000000">0.583</td>
+              <td class="duration" data-value="583000000">0.583</td>
+              <td class="duration" data-value="583000000">0.583</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.FinalTests.verify_issue_summary()</td>
+              <td>1</td>
+              <td class="duration" data-value="26000000">0.026</td>
+              <td class="duration" data-value="26000000">0.026</td>
+              <td class="duration" data-value="26000000">0.026</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.Hooks.after()</td>
+              <td>6</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefination.jira.Hooks.setup()</td>
+              <td>6</td>
+              <td class="duration" data-value="667666666">0.667</td>
+              <td class="duration" data-value="667666666">4.006</td>
+              <td class="duration" data-value="4006000000">4.006</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>22</td>
+            <td>43</td>
+            <td class="duration">0.349</td>
+            <td class="duration">4.006</td>
+            <td class="duration">15.049</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

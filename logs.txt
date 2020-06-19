@@ -1,0 +1,382 @@
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "RES"
+        },
+        "summary": "Automated Bug",
+        "description": "Bug reporting using the REST API",
+        "issuetype": {
+            "name": "Bug"
+        }
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 771x115x1
+X-ASESSIONID: 1udk8u6
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15502454
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_5b74bed0719c9f1cd2306c44c093d15518352867_lin; Path=/
+X-AUSERNAME: D
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 18 Jun 2020 07:21:15 GMT
+
+{
+    "id": "10612",
+    "key": "RES-341",
+    "self": "http://localhost:8080/rest/api/2/issue/10612"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/10612/comment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueID=10612
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "body": "Comment from feature file",
+    "visibility": {
+        "type": "role",
+        "value": "Administrators"
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 771x116x1
+X-ASESSIONID: 1udk8u6
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15502454
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_f15ebca2bb27f10862c55459193766ea42139a76_lin; Path=/
+X-AUSERNAME: D
+Location: http://localhost:8080/rest/api/2/issue/10612/comment/10611
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 18 Jun 2020 07:21:17 GMT
+
+{
+    "self": "http://localhost:8080/rest/api/2/issue/10612/comment/10611",
+    "id": "10611",
+    "author": {
+        "self": "http://localhost:8080/rest/api/2/user?username=D",
+        "name": "D",
+        "key": "JIRAUSER10000",
+        "emailAddress": "danishjaved636@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+        },
+        "displayName": "danishjaved636@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "body": "Comment from feature file",
+    "updateAuthor": {
+        "self": "http://localhost:8080/rest/api/2/user?username=D",
+        "name": "D",
+        "key": "JIRAUSER10000",
+        "emailAddress": "danishjaved636@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+        },
+        "displayName": "danishjaved636@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "created": "2020-06-18T12:51:16.220+0530",
+    "updated": "2020-06-18T12:51:16.220+0530",
+    "visibility": {
+        "type": "role",
+        "value": "Administrators"
+    }
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/10612/attachments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueID=10612
+Headers:		X-Atlassian-Token=no-check
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = pic.jpg
+				Content-Type: application/octet-stream
+
+				.\pic.jpg
+				------------
+				Content-Disposition: form-data; name = file; filename = abc.txt
+				Content-Type: application/octet-stream
+
+				.\abc.txt
+Body:			<none>
+HTTP/1.1 200 
+X-AREQUESTID: 771x117x1
+X-ASESSIONID: 1udk8u6
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15502454
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_ca4b7e30c5c2d7ec213f523c5b338bd99f34b293_lin; Path=/
+X-AUSERNAME: D
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 18 Jun 2020 07:21:22 GMT
+
+[
+    {
+        "self": "http://localhost:8080/rest/api/2/attachment/10922",
+        "id": "10922",
+        "filename": "pic.jpg",
+        "author": {
+            "self": "http://localhost:8080/rest/api/2/user?username=D",
+            "name": "D",
+            "key": "JIRAUSER10000",
+            "emailAddress": "danishjaved636@gmail.com",
+            "avatarUrls": {
+                "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+                "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+                "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+                "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+            },
+            "displayName": "danishjaved636@gmail.com",
+            "active": true,
+            "timeZone": "Asia/Calcutta"
+        },
+        "created": "2020-06-18T12:51:19.944+0530",
+        "size": 745916,
+        "mimeType": "image/jpeg",
+        "content": "http://localhost:8080/secure/attachment/10922/pic.jpg",
+        "thumbnail": "http://localhost:8080/secure/thumbnail/10922/_thumb_10922.png"
+    },
+    {
+        "self": "http://localhost:8080/rest/api/2/attachment/10923",
+        "id": "10923",
+        "filename": "abc.txt",
+        "author": {
+            "self": "http://localhost:8080/rest/api/2/user?username=D",
+            "name": "D",
+            "key": "JIRAUSER10000",
+            "emailAddress": "danishjaved636@gmail.com",
+            "avatarUrls": {
+                "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+                "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+                "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+                "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+            },
+            "displayName": "danishjaved636@gmail.com",
+            "active": true,
+            "timeZone": "Asia/Calcutta"
+        },
+        "created": "2020-06-18T12:51:20.330+0530",
+        "size": 32,
+        "mimeType": "text/plain",
+        "content": "http://localhost:8080/secure/attachment/10923/abc.txt"
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/rest/api/2/issue/10612?fields=comment&fields=summary&fields=description&fields=attachment
+Proxy:			<none>
+Request params:	<none>
+Query params:	fields=[comment, summary, description, attachment]
+Form params:	<none>
+Path params:	issueID=10612
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+X-AREQUESTID: 771x118x1
+X-ASESSIONID: 1udk8u6
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15502454
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_a2a1fb44ff4f28e3f86ea2d3ef0ead7c4795c862_lin; Path=/
+X-AUSERNAME: D
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 18 Jun 2020 07:21:22 GMT
+
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10612",
+    "self": "http://localhost:8080/rest/api/2/issue/10612",
+    "key": "RES-341",
+    "fields": {
+        "summary": "Automated Bug",
+        "description": "Bug reporting using the REST API",
+        "comment": {
+            "comments": [
+                {
+                    "self": "http://localhost:8080/rest/api/2/issue/10612/comment/10611",
+                    "id": "10611",
+                    "author": {
+                        "self": "http://localhost:8080/rest/api/2/user?username=D",
+                        "name": "D",
+                        "key": "JIRAUSER10000",
+                        "emailAddress": "danishjaved636@gmail.com",
+                        "avatarUrls": {
+                            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+                            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+                            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+                            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+                        },
+                        "displayName": "danishjaved636@gmail.com",
+                        "active": true,
+                        "timeZone": "Asia/Calcutta"
+                    },
+                    "body": "Comment from feature file",
+                    "updateAuthor": {
+                        "self": "http://localhost:8080/rest/api/2/user?username=D",
+                        "name": "D",
+                        "key": "JIRAUSER10000",
+                        "emailAddress": "danishjaved636@gmail.com",
+                        "avatarUrls": {
+                            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+                            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+                            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+                            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+                        },
+                        "displayName": "danishjaved636@gmail.com",
+                        "active": true,
+                        "timeZone": "Asia/Calcutta"
+                    },
+                    "created": "2020-06-18T12:51:16.220+0530",
+                    "updated": "2020-06-18T12:51:16.220+0530",
+                    "visibility": {
+                        "type": "role",
+                        "value": "Administrators"
+                    }
+                }
+            ],
+            "maxResults": 1,
+            "total": 1,
+            "startAt": 0
+        },
+        "attachment": [
+            {
+                "self": "http://localhost:8080/rest/api/2/attachment/10923",
+                "id": "10923",
+                "filename": "abc.txt",
+                "author": {
+                    "self": "http://localhost:8080/rest/api/2/user?username=D",
+                    "name": "D",
+                    "key": "JIRAUSER10000",
+                    "emailAddress": "danishjaved636@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+                        "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+                        "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+                        "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+                    },
+                    "displayName": "danishjaved636@gmail.com",
+                    "active": true,
+                    "timeZone": "Asia/Calcutta"
+                },
+                "created": "2020-06-18T12:51:20.330+0530",
+                "size": 32,
+                "mimeType": "text/plain",
+                "content": "http://localhost:8080/secure/attachment/10923/abc.txt"
+            },
+            {
+                "self": "http://localhost:8080/rest/api/2/attachment/10922",
+                "id": "10922",
+                "filename": "pic.jpg",
+                "author": {
+                    "self": "http://localhost:8080/rest/api/2/user?username=D",
+                    "name": "D",
+                    "key": "JIRAUSER10000",
+                    "emailAddress": "danishjaved636@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "http://localhost:8080/secure/useravatar?avatarId=10348",
+                        "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10348",
+                        "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10348",
+                        "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10348"
+                    },
+                    "displayName": "danishjaved636@gmail.com",
+                    "active": true,
+                    "timeZone": "Asia/Calcutta"
+                },
+                "created": "2020-06-18T12:51:19.944+0530",
+                "size": 745916,
+                "mimeType": "image/jpeg",
+                "content": "http://localhost:8080/secure/attachment/10922/pic.jpg",
+                "thumbnail": "http://localhost:8080/secure/thumbnail/10922/_thumb_10922.png"
+            }
+        ]
+    }
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/rest/api/2/issue/10612
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueID=10612
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 
+X-AREQUESTID: 771x119x1
+X-ASESSIONID: 1udk8u6
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15502454
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKGF-TW7M-T78S-QNVF_418cf976b199347fc62a6ca96ebe8f8c14c3907a_lin; Path=/
+X-AUSERNAME: D
+Cache-Control: no-cache, no-store, no-transform
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 18 Jun 2020 07:21:24 GMT

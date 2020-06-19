@@ -1,0 +1,664 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-18T07:21:10.031Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4006000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create a jira issue",
+        "description": "",
+        "id": "jira-apis;create-a-jira-issue",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Create body for createIssueAPI",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.create_body_for_createIssueAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Create request specification for \"createIssueAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "createIssueAPI",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_request_specification_for_deleteIssueAPI(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Create response specification with status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_response_specification_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1315000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Send request to createIssueAPI",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.send_request_to_createIssueAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "extract issueID",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.extract_issueID()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@createIssue"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-18T07:21:15.619Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Comment on jira issue",
+        "description": "",
+        "id": "jira-apis;comment-on-jira-issue",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have issueID",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.i_have_issueID()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Create comment body with comment \"Comment from feature file\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Comment from feature file\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_comment_body(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Create request specification for \"addCommentAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "addCommentAPI",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_request_specification_for_deleteIssueAPI(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Create response specification with status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_response_specification_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1965000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Send request to addCommentAPI",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.send_request_to_addCommentAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1561000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Extract commentID",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.extract_commentID()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@commentOnIssue"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-18T07:21:19.202Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Add attachment to jira issue",
+        "description": "",
+        "id": "jira-apis;add-attachment-to-jira-issue",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I have issueID",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.i_have_issueID()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Create request specification for \"addAttachmentAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "addAttachmentAPI",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_request_specification_for_deleteIssueAPI(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Create response specification with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_response_specification_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3551000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Send request to addAttachmentAPI",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.send_request_to_addAttachmentAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Extract attached files name",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.extract_attached_files_name()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addAttachmentToIssue"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-18T07:21:22.938Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Get details of a jira issue",
+        "description": "",
+        "id": "jira-apis;get-details-of-a-jira-issue",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I have issueID",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.i_have_issueID()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Create request specification for \"getIssueAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getIssueAPI",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_request_specification_for_deleteIssueAPI(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Create response specification with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_response_specification_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 525000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Send request to getIssueAPI",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.send_request_to_getIssueAPI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getIssueDetails"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-18T07:21:23.487Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Verify entered details",
+        "description": "",
+        "id": "jira-apis;verify-entered-details",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I have GetIssue API response",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.i_have_getIssue_API_reponse()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Verify issueID",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.verify_issueID()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify issue summary",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.verify_issue_summary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Verify issue description",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.verify_issue_description()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Verify comment",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.verify_comment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Verify attachments",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.verify_attachments()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@verifyDetails"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-18T07:21:23.643Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Delete jira issue",
+        "description": "",
+        "id": "jira-apis;delete-jira-issue",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.jira.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I have issueID",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.i_have_issueID()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Create request specification for \"deleteIssueAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deleteIssueAPI",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_request_specification_for_deleteIssueAPI(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Create response specification with status code 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefination.jira.FinalTests.create_response_specification_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1050000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Send request to deleteIssueApi",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.send_request_to_deleteIssueAPI()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 583000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Verify issue is deleted",
+            "match": {
+              "location": "stepDefination.jira.FinalTests.verify_issue_is_deleted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deleteIssue"
+          }
+        ]
+      }
+    ],
+    "name": "Jira APIs",
+    "description": "",
+    "id": "jira-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FinalFeature.feature",
+    "tags": []
+  }
+]
